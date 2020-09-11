@@ -1,4 +1,4 @@
-# api.passport.local
+# passport.local
 
 Frontend implementation of authentication [by Laravel Passport](https://github.com/N1ebieski/api.passport.local) in Vue Nuxt.JS application. 
 
