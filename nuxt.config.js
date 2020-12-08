@@ -109,12 +109,12 @@ export default {
                 scheme: 'refresh',
                 token: {
                     property: 'access_token',
-                    maxAge: 1800
+                    maxAge: 60 * 60 * 24 * 30
                 },
                 refreshToken: {
                     property: 'refresh_token',
                     data: 'refresh_token',
-                    maxAge: 60 * 60 * 24 * 30
+                    maxAge: 60 * 60 * 24 * 30 * 12
                 },
                 user: {
                     property: false
@@ -122,6 +122,10 @@ export default {
                 endpoints: {
                     login: {
                         url: process.env.AUTH_URL + '/login',
+                        method: 'post'
+                    },
+                    refresh: {
+                        url: process.env.AUTH_URL + '/refresh',
                         method: 'post'
                     },
                     logout: {
