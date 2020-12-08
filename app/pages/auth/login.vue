@@ -42,7 +42,7 @@
                             <b-form-checkbox
                                 v-model="form.remember"
                                 :disabled="form.busy"
-                                :class="{ 'is-invalid': form.errors.has('password') }"
+                                :class="{ 'is-invalid': form.errors.has('remember') }"
                                 name="remember"
                             >
                                 Zapamiętaj mnie
